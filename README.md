@@ -1,75 +1,85 @@
-# React + TypeScript + Vite
+# 🎓 Student Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern desktop application built to help students manage their academic life from one place.
 
-Currently, two official plugins are available:
+## ✨ Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Student Dashboard is a productivity application designed for college students. It combines timetable management, assignment tracking, notes, attendance monitoring, expense tracking, and more into a single, easy-to-use application.
 
-## React Compiler
+The project is being built as a full-stack desktop application using modern web technologies and will eventually run as a native desktop app through Tauri.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Planned Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📊 Dashboard overview
+- 📅 Weekly timetable
+- ✅ Assignment tracker
+- 📝 Notes manager
+- 🎯 Attendance calculator
+- 💰 Expense tracker
+- 📚 Exam countdown
+- 📈 GPA calculator
+- 🔔 Notifications
+- 🌙 Dark & Light mode
+- 🤖 AI study assistant (planned)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠 Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Frontend
 
-```
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Backend
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- FastAPI (Python)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Database
 
-```
+- SQLite
+
+### Desktop
+
+- Tauri
+
+---
+
+## 📁 Project Status
+
+🚧 Currently under active development.
+
+Current progress:
+
+- ✅ Project setup
+- ✅ React + TypeScript
+- ✅ Tailwind CSS
+- ✅ shadcn/ui
+
+---
+
+## 🎯 Goals
+
+This project aims to:
+
+- Build a practical application that students can use daily.
+- Learn modern full-stack development.
+- Explore desktop application development with Tauri.
+- Practice clean architecture and scalable project organization.
+
+---
+
+## 📸 Screenshots
+
+Screenshots will be added as the project develops.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
