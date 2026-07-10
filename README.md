@@ -79,7 +79,3 @@ This project aims to:
 Screenshots will be added as the project develops.
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License.

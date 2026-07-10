@@ -7,13 +7,13 @@ export default function AppHeader() {
         <p className="text-sm text-zinc-400">Welcome back, Student!</p>
       </div>
       <div className="flex items-center gap-4">
-        <button className="p-2 rounded-lg hover:bg-zinc-700 transition-colors">
+        <button className="p-2 rounded-lg hover:bg-white-700 transition-colors">
           <Search size={20} />
         </button>
-        <button className="p-2 rounded-lg hover:bg-zinc-700 transition-colors">
+        <button className="p-2 rounded-lg hover:bg-white-700 transition-colors">
           <Bell size={20} />
         </button>
-        <button className="p-2 rounded-lg hover:bg-zinc-700 transition-colors">
+        <button className="p-2 rounded-lg hover:bg-white-700 transition-colors">
           <User size={20} />
         </button>
       </div>
