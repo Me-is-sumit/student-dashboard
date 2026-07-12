@@ -1,4 +1,6 @@
 import StatCard from "@/components/dashboard/StatCard";
+import TodaysClasses from "@/components/dashboard/TodaysClasses";
+import UpcomingAssignment from "@/components/dashboard/UpcomingAssignment";
 import { BarChart3, ClipboardList, Calendar, Wallet } from "lucide-react";
 export default function Dashboard() {
   return (
@@ -14,6 +16,10 @@ export default function Dashboard() {
         <StatCard title="Assignments" value="5" icon={ClipboardList} />
         <StatCard title="Today's Classes" value="3" icon={Calendar} />
         <StatCard title="Monthly Budget" value="Rs.2500" icon={Wallet} />
+      </div>
+      <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2 mt-6">
+        <TodaysClasses />
+        <UpcomingAssignment />
       </div>
     </div>
   );
