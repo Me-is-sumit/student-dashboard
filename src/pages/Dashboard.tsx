@@ -1,3 +1,4 @@
+import AttendanceTracker from "@/components/dashboard/AttendanceTracker";
 import StatCard from "@/components/dashboard/StatCard";
 import TodaysClasses from "@/components/dashboard/TodaysClasses";
 import UpcomingAssignment from "@/components/dashboard/UpcomingAssignment";
@@ -20,6 +21,9 @@ export default function Dashboard() {
       <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2 mt-6">
         <TodaysClasses />
         <UpcomingAssignment />
+      </div>
+      <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1 mt-6">
+        <AttendanceTracker />
       </div>
     </div>
   );
