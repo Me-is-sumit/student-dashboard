@@ -31,25 +31,27 @@ export default function AttendanceTracker() {
   return (
     <AppCard title="Attendance Tracker">
       <div className="space-y-4">
-        {AttendanceData.map((attendance) => (
-          <div key={attendance.subject} className="rounded-xl border p-4">
-            <h3 className="font-semibold">{attendance.subject}</h3>
-            <p className="text-sm text-zinc-500">
-              Classes Attended: {attendance.classAttended}
-            </p>
-            <p className="text-sm text-zinc-500">
-              Total Classes: {attendance.totalClasses}
-            </p>
-            <p className="text-sm text-zinc-500">
-              Percentage:{" "}
-              {(
-                (attendance.classAttended / attendance.totalClasses) *
-                100
-              ).toFixed(2)}
-              %
-            </p>
-          </div>
-        ))}
+        {AttendanceData.map((attendance) => {
+          const percentage =
+            (attendance.classAttended / attendance.totalClasses) * 100;
+
+          return (
+            <div key={attendance.subject} className="rounded-xl border p-4">
+              <h3 className="font-semibold">{attendance.subject}</h3>
+              <p className="text-sm text-zinc-500">
+                Classes Attended: {attendance.classAttended}
+              </p>
+              <p className="text-sm text-zinc-500">
+                Total Classes: {attendance.totalClasses}
+              </p>
+              <p
+                className={`text-sm ${percentage < 75 ? "text-red-500" : "text-green-500"}`}
+              >
+                Percentage: {percentage.toFixed(2)}%
+              </p>
+            </div>
+          );
+        })}
       </div>
     </AppCard>
   );
