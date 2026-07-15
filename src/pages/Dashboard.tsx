@@ -1,5 +1,7 @@
 import AttendanceTracker from "@/components/dashboard/AttendanceTracker";
+import Counter from "@/components/dashboard/Counter";
 import StatCard from "@/components/dashboard/StatCard";
+import StudySessionCounter from "@/components/dashboard/StudySessionCounter";
 import TodaysClasses from "@/components/dashboard/TodaysClasses";
 import UpcomingAssignment from "@/components/dashboard/UpcomingAssignment";
 import { BarChart3, ClipboardList, Calendar, Wallet } from "lucide-react";
@@ -25,6 +27,8 @@ export default function Dashboard() {
       <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1 mt-6">
         <AttendanceTracker />
       </div>
+      {/* <Counter /> */}
+      <StudySessionCounter />
     </div>
   );
 }
