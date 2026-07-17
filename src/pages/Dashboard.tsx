@@ -1,5 +1,5 @@
 import AttendanceTracker from "@/components/dashboard/AttendanceTracker";
-import Counter from "@/components/dashboard/Counter";
+//import Counter from "@/components/dashboard/Counter";
 import StatCard from "@/components/dashboard/StatCard";
 import StudySessionCounter from "@/components/dashboard/StudySessionCounter";
 import TodaysClasses from "@/components/dashboard/TodaysClasses";
